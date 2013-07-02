@@ -1,0 +1,32 @@
+a {
+	color: $link-color;
+	&:hover {
+		color: $link-hover-color;
+	}
+}
+nav #main-nav-bar li#link-to-cart {
+	padding-left: 20px;
+	a {
+		color: $link-color;
+		&:hover {
+			color: $link-hover-color;	
+		}
+	}
+}
+ul#products li .price {
+	color: $link-color;
+}
+ul#products li .product-image:hover {
+	border-color: $link-color;
+}
+input[type="submit"], input[type="button"], input[type="reset"], button, a.button {
+	background-color: $link-color;
+	border: 1px solid darken($link-color, 10%);
+}
+.footer-container {
+	background-color: $footer-color;
+	border-top: 1px solid #c6c6c6;
+	footer#footer {
+		border-top: none;
+	}
+}
