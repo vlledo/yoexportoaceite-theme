@@ -1,0 +1,19 @@
+table {
+  thead {
+    background-color: $link-color;
+    color: #fff;
+
+    th {
+      font-weight: 600;  
+      font-size: 14px;
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        font-size: 14px;
+      }
+    }  
+  }
+}
