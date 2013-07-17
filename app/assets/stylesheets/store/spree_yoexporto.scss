@@ -5,8 +5,11 @@
 @import 'compass';
 @import 'compass/css3';
 
+@import './variables';
+
 @import 'shared/typography';
 @import 'shared/forms';
+@import 'shared/media';
 @import 'shared/layout';
 
 @import 'components/product_item';
@@ -22,14 +25,3 @@
 @import 'sections/cart';
 @import 'sections/user';
 @import 'sections/contact_us';
-
-@import 'shared/media';
-
-$link-color: #cd5a1c;
-$link-hover-color: #555;
-$footer-color: #e6e6e6;
-$steps-color: #d7cc01;
-
-@import url(//fonts.googleapis.com/css?family=Telex);
-
-$ff_base: 'Telex', sans-serif !default;
