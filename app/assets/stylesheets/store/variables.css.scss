@@ -3,6 +3,17 @@ $link-hover-color: #555;
 $footer-color: #e6e6e6;
 $steps-color: #d7cc01;
 
+
+$layout_background_color:   #FFFFFF;
+$title_text_color:          #404042 !default;
+$body_text_color:           #919191;
+$link_text_color:           #61a1f0;
+
+$product_background_color:  #FFFFFF !default;
+$product_title_text_color:  #404042 !default;
+$product_body_text_color:   #404042 !default;
+$product_link_text_color:   #BBBBBB !default;
+
 @import url(//fonts.googleapis.com/css?family=Telex);
 
 $ff_base: 'Telex', sans-serif;
