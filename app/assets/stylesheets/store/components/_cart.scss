@@ -7,6 +7,9 @@ span.price, #checkout-summary table tr[data-hook="item_total"] td:last-child str
 .progress-steps li.current-first, .progress-steps li.current {
 	background-color: $steps-color;
 }
+.progress-steps li {
+	padding: 5px 5px 5px 25px;
+}
 #shipping_method .stock-location {
 	background-color: $link-color;
 }
