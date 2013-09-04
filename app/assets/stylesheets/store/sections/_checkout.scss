@@ -1,4 +1,7 @@
 table {
+  display: block;
+  max-width: 100%;
+  overflow-y: hidden;
   thead {
     background-color: $link-color;
     color: #fff;
