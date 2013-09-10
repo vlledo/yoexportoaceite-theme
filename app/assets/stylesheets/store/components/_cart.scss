@@ -13,3 +13,19 @@ span.price, #checkout-summary table tr[data-hook="item_total"] td:last-child str
 #shipping_method .stock-location {
 	background-color: $link-color;
 }
+.progress-steps li.completed-first, .progress-steps li.completed {
+	color: $link-color;
+	a {
+		color: $link-color;
+	}
+}
+.progress-steps li.completed-first:hover, .progress-steps li.completed:hover {
+	background-color: transparent;
+	color: #555;
+	a {
+		color: #555;
+		&:hover {
+			color:#555;
+		}
+	}
+}

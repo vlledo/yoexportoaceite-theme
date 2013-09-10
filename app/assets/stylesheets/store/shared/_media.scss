@@ -66,7 +66,6 @@
       		}
     	}
     	table#cart-detail {
-      		margin-left: -30px;
       		th, td, tbody tr td[data-hook="cart_item_price"], tbody#line_items tr td[data-hook="cart_item_total"] {
         		font-size: 12px !important;
       		}
@@ -80,19 +79,29 @@
         		display: none;
       		}
     	}
+    	#order table[data-hook="order_details"] {
+    		display: block;
+    		max-width: 100%;
+    		overflow-y: scroll;
+    		#subtotal, #order-charges, #order-total {
+    			font-size: .8em;
+    		}
+    	}
+
     	#subheader .subheader-wrapper h1 {
       		font-size: 28px;
     	}
-    	#main-image {
-      		width: 270px;
-      		height: 270px;
-      		margin: 0 auto;
-      		padding: 15px;
-      		img {
-        		@include border-radius(80px !important);
-        		padding: 10px 0 0 0;
-      		}
-    	}
+    	#product-image {
+	    	#main-image {
+	      		width: 270px;
+	      		height: 270px;
+	      		margin: 0 auto;
+	      		padding: 15px;
+	      		img {
+	        		padding: 10px 0 0 0;
+	      		}
+	    	}
+	    }
     	#product-properties tr td, #product-description, #taxon-crumbs {
       		text-align: left;
     	}
@@ -115,37 +124,9 @@
         		margin-right: 0;
         		.price {
           			font-size: 20px !important;
-          			color: $c_green;
         		}
       		}
     	}
-
-	    ul#products {
-	    	li {
-	        	width: 300px;
-	      		a.info {
-	        		font-size: 12px;
-	        		font-weight: 600;
-	      		}
-	      		.product-image {
-	        		a {
-	          			padding: 18px 12px 18px 10px;
-	          			img {
-	            			width: 240px;
-	            			height: 240px;
-	          			}
-	        		}
-	      		}
-	      		[data-hook="products_list_item"] {
-	        	width: 300px !important;
-	        	margin: 0;
-	        	margin-bottom: 30px;
-	        	padding: 0;
-	      	}
-	    }
-	    #welcome-message h1 {
-	    	font-size: 16px;
-	    }
 	    #search-bar form {
 	    	z-index: 1;
 	    }
@@ -178,10 +159,11 @@
 	    }
 	    .progress-steps {
 	     	position: absolute;
-	    	top: 20px;
+	    	top: 30px;
 	    	margin-left: 0;
 	    	li {
 	        	&, &.current, &.current-first, &.current-last {
+	        		list-style-type: none;
 	          		padding: 0 5px !important;
 					margin-right: 0px;
 					margin-bottom: 0;
@@ -189,7 +171,7 @@
 					font-weight: 600;
 					font-size: 12px;
 					width: auto !important;
-					border-bottom: 1px solid lighten($c_green, 20);
+					border-bottom: 1px solid $steps-color;
 	        	}
 		        span {
 					padding: 0;
@@ -248,22 +230,18 @@
 	        	width: 400px;
 	      	}
 	    }
-
-	    table#cart-detail {
-	    	margin-left: 12px;
-	    }
 	}
 }
 
 @media only screen and (max-width: 480px) {
+	#search-bar {
+		input[type="submit"] {
+			margin-top: 0;
+		}
+	}
 	.footer-container {
 		footer#footer {
 			padding: 20px 0;
-		}
-	}
-	#search-bar {
-		input[type="submit"] {
-			margin-top: 10px;
 		}
 	}
 	#wrapper {
@@ -273,5 +251,17 @@
 		#update-cart .coupon-code-field {
      		width: 300px !important;
     	}
+    	#update-cart .links {
+    		button#checkout-link {
+    			margin-top: 5px;
+    		}
+    	}
+	}
+	footer#footer {
+		#footer-left {
+			img#logo-ministerio {
+				width: 40%;
+			}
+		}
 	}
 }
