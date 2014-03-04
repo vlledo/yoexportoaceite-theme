@@ -9,8 +9,9 @@
   </head>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
     <div class="modal-container">
-      <%= if !(session[:show_modal].nil?) %>
+      <% if !(session[:show_modal].nil?) %>
         <%= render partial: 'layouts/modal' %>
+      <% end %>
     </div>
     <div class="header-container">
       <div class="container">
