@@ -10,7 +10,7 @@
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
     <div class="modal-container">
       <% if !(session[:show_modal].nil?) %>
-        <%= render :partial => 'spree/shared/modal.js' %>
+        <%= j render :partial => 'spree/shared/modal.js' %>
       <% end %>
     </div>
     <div class="header-container">
