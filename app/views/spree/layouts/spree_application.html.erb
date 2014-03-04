@@ -10,7 +10,7 @@
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
     <div class="modal-container">
       <% if !(session[:show_modal].nil?) %>
-        <%= render partial: 'spree/layouts/modal' %>
+        <%= render 'spree/layouts/modal' %>
       <% end %>
     </div>
     <div class="header-container">
