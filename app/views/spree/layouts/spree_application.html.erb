@@ -8,8 +8,8 @@
     <%= render :partial => 'spree/shared/head' %>
   </head>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
-    <div class="modal">
-      <% if !(session[:show_modal].nil?) %>
+    <div class="modal-container">
+      <%= if !(session[:show_modal].nil?) %>
         <%= render partial: 'layouts/modal' %>
     </div>
     <div class="header-container">
