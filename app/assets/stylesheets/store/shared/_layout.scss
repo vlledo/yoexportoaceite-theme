@@ -4,6 +4,13 @@ a {
 		color: $link-hover-color;
 	}
 }
+.modal {
+	display: none;
+	font-size: 16px;
+	a.close-modal {
+		background-image: image-url('close.png') !important;
+	}
+}
 nav #main-nav-bar li#link-to-cart {
 	padding-left: 20px;
 	a {
